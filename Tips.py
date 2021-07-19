@@ -32,7 +32,7 @@ class Tips(QWidget):
                 self.resize(WIDTH, HEIGHT)
                 
                 self.palette = QPalette()
-                self.palette.setColor(QPalette.Window, QColor(119, 193, 255))
+                self.palette.setColor(QPalette.Window, QColor(139, 153, 170))
                 self.setPalette(self.palette)
                 
                 self.info_textarea = QPlainTextEdit(self)
