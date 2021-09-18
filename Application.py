@@ -13,7 +13,7 @@ from Tips import *
 
 
 
-SHODAN_API_KEY = 'YOUR API KEY'
+SHODAN_API_KEY = 'hzYm0JT0ufixZV32MfjRqIspqxokzLzp'
 HEIGHT = 800
 WIDTH = 1000
 
@@ -70,15 +70,15 @@ class Application(QWidget):
         
                        
                 if re.match(r'[a-zA-ZåäöÅÄÖ ]+$', self.SearchWidget.textbox_city.text()):
-                        search_string += " city:"+self.SearchWidget.textbox_city.text()
+                        search_string += ' city:'+'"'+self.SearchWidget.textbox_city.text()+'"'
                 else:
                         self.SearchWidget.textbox_city.setText('')
 
                 if not self.SearchWidget.textbox_org.text() == "":
-                        search_string += " org:"+self.SearchWidget.textbox_org.text()
+                        search_string += ' org:'+'"'+self.SearchWidget.textbox_org.text()+'"'
 
                 if re.match(r'[0-9.]+$', self.SearchWidget.textbox_ip.text()):
-                        search_string += " ip_str:"+self.SearchWidget.textbox_ip.text()
+                        search_string += ' ip_str:'+self.SearchWidget.textbox_ip.text()
                 else:
                         self.SearchWidget.textbox_ip.setText('')
 
@@ -86,7 +86,6 @@ class Application(QWidget):
                         search_string += " port:"+self.SearchWidget.textbox_port.text()
                 else:
                         self.SearchWidget.textbox_port.setText('')
-
 
                 self.search_query = search_string
                 self.page_number = 1
