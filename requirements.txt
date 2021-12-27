@@ -1,0 +1,3 @@
+pycountry
+pygt5
+shodan
