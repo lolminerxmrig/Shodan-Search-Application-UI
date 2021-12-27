@@ -42,7 +42,7 @@ class Table(QWidget):
                 self.textArea.setReadOnly(True)
                 layout.addWidget(self.tableWidget, stretch=1)
                 layout.addWidget(self.textArea)
-
+                self.tableWidget.setSortingEnabled(True)
                 self.setLayout(layout)
                 self.show()
 

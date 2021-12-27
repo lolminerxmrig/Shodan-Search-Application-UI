@@ -13,9 +13,9 @@ from Tips import *
 
 
 
-SHODAN_API_KEY = 'YOUR API KEY'
+SHODAN_API_KEY = 'hzYm0JT0ufixZV32MfjRqIspqxokzLzp'
 HEIGHT = 800
-WIDTH = 1000
+WIDTH = 1300
 
 api = shodan.Shodan(SHODAN_API_KEY)
 
